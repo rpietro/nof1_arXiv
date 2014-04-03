@@ -1,7 +1,22 @@
-# N-of-1 Design in Education
+# N-of-1 Design in Education - a review and proposal for a semantic approach to N-of-1 trials
 
-Ricardo Pietrobon, Uwe Heiss, Mauro Maldonato, Joao Vissoci, Bruno Melo, Jacinto Franco, Seiji Isotani  
+Ricardo Pietrobon  
+Mauro Maldonato  
+Talitha Yen  
+Joao Vissoci  
+Ana Paula Ferreira  
+Bruno Melo  
+Jacinto Franco  
+Jacson Barros   
+Seiji Isotani  
 
+<!-- to be sent for www.arXiv.org -->
+
+
+## Abstract
+
+
+## Introduction
 
 
 N-of-1 trials are cross-over trials where the randomization is conducted at the subject rather than the group level. This modification has a number of important implications, among them:
@@ -21,6 +36,19 @@ N-of-1 trials are cross-over trials where the randomization is conducted at the 
 
 check http://goo.gl/wjAh0t 
 -->
+
+
+Table 1. Comparing different trial designs
+
+<!-- this table could be transformed in an infographic and posted to ghost -->
+
+| Design |Characteristics |
+|---|---|
+|Parallel|Each arm receives one intervention|
+|Factorial|Each arm receives a combination of one or more interventions|
+|Cross-over|Each arm receives an initial intervention, and then this intervention is flipped|
+|N-of-1|Each participant receives an initial intervention, and then each participant is individually randomized to receive another intervention|
+
 
 ### Carryover effect
 
@@ -62,41 +90,34 @@ Another interesting article is "[Graphical Insight and Data Analysis for the 2,2
 
 ## Reporting guidelines for where N-of-1 can be used
 
-The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list:
-
-1. Trial design
-    * planned number and duration of each period
-    * run-in and wash out with rationale
-    * Series of N- of-1 trials
-1. Ethics
-    * IRB approval
-1. Participants
-    * Eligibility
-    * Settings and locations
-1. Interventions
-1. Outcomes
-    * Primary
-    * Secondary
-1. Sample size and stopping rules
-1. Randomization
-    * Sequence generation
-    * Allocation concealment
-    * Blinding
-1. Data analysis
-    * Assumption checking: carry-over effect, period effects, intra-subject correlation
-    * Efficacy evaluation
-    * Synthesis methods if more than one N-of-1 is being used
-        * how heterogeneity between participants was assessed
-        * check [PRISMA guidelines](http://www.prisma-statement.org/)
-1. Reproducicle research
-    * scripts on [github](https://github.com/)
-    * data on github and [figshare](http://figshare.com/) 
-    * storage of software packages
-1. N-of-1 data compilation
-    *  [Use-case driven](http://www.researchgate.net/publication/221465095_A_Proposal_for_a_Unified_Process_for_Ontology_Building_UPON/file/79e4150a24778016df.pdf) [ontology](http://www.w3.org/RDF/) modeling which extends [Cook and Pietrobon, 2007](http://www.ncbi.nlm.nih.gov/pubmed/17847604)
-    *  connection with R packages
+The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for our research group:
 
 
+|Main section|Subsections|
+|---|---|
+|Trial design|Planned number and duration of each period, run-in and wash out with rationale, series of N- of-1 trials|
+|Ethics|IRB approval, including details on informed consent or why it was waived|
+|Participants|Eligibility and settings, recruitment methods|
+|Interventions|Reproducible description with content being made available as an open repository|
+|Outcomes|Primary and secondary, including factors such as information absorption, ability to solve problems, User eXperience (UX) and ability to put information to real-world practice|
+|Sample size|Reproducible through scripts and links to preliminary data or relevant publications|
+|Stopping rules|Set upfront or decided during the trial|
+|Randomization|Sequence generation, allocation concealment, blinding|
+|Data analysis|Fully reproducible with corresponding scripts, assumption checking (carry-over effect, period effects, intra-subject correlation), efficacy evaluation, synthesis methods if more than one N-of-1 is being used (how heterogeneity between participants was assessed, [PRISMA guidelines](http://www.prisma-statement.org/))
+|Reproducicle research|Scripts available on sites such as [Github](https://github.com/), data available on sites such as Github and [Figshare](http://figshare.com/), storage of software packages]
+|N-of-1 data compilation| [Use-case driven](http://www.researchgate.net/publication/221465095_A_Proposal_for_a_Unified_Process_for_Ontology_Building_UPON/file/79e4150a24778016df.pdf) [ontology](http://www.w3.org/RDF/) modeling which extends [Cook and Pietrobon, 2007](http://www.ncbi.nlm.nih.gov/pubmed/17847604), connection with R packages|
+
+
+## A proposed semantic representation
+
+### Use case 
+
+
+
+### Semantic structure
+
+turtle and relations among classes
+plan for direct RDF import using [meta package](http://cran.r-project.org/web/packages/meta/index.html)
 
 
 
