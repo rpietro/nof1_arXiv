@@ -26,9 +26,13 @@ N-of-1 trials are cross-over trials where the randomization is conducted at the 
 3. Similar to cross-over trials, the design will have to carefully consider issues such as carry-over effect, period effects, intra-subject correlation
 4. Since N-of-1 trials are randomized controlled trials, most of the principles applicable to parallel trials also apply to N-of-1, and so the [CONSORT statement](http://www.consort-statement.org/) has to be observed, obviously with modifications.
 
+Although this design has a number of potential application within research focused on Personalized Lifelong Learning, educational trials making of an N-of-1 design are few and scattered. The objective of this review is therefore to cover the basic principles behind N-of-1 trial design applied to online educational trials, covering practical implementation suggestions and also outlining a first iteration of a structure for their semantic representation.
+
 
 <!-- https://docs.google.com/file/d/0B4Ke-17mTW1_MW1vRnFYcEdBbzMtM09IaUdCeEZvVmkwVTNJ/edit -->
-## Design issues
+
+
+## Design and randomization issues
 
 <!-- need to add specifics about education -->
 
@@ -37,20 +41,15 @@ N-of-1 trials are cross-over trials where the randomization is conducted at the 
 check http://goo.gl/wjAh0t 
 -->
 
+N-of-1 trials are part of a wide range of trial design types that can be applied in an online environment. Currently, one of the most comprehensive sources of information on different types of trial designs and their combination is defined through [Facebook]()'s [Planout framework]().
 
-Table 1. Comparing different trial designs
+<!-- outline basic structure for planout from their web site - check 3d proposal for links -->
 
-<!-- this table could be transformed in an infographic and posted to ghost -->
-
-| Design |Characteristics |
-|---|---|
-|Parallel|Each arm receives one intervention|
-|Factorial|Each arm receives a combination of one or more interventions|
-|Cross-over|Each arm receives an initial intervention, and then this intervention is flipped|
-|N-of-1|Each participant receives an initial intervention, and then each participant is individually randomized to receive another intervention|
-
+N-of-1 trials have inherited some issues that are typical from crossover trials, namely carryover effects, the need for run-in and washout periods, and period effects. These are described in the following sections.
 
 ### Carryover effect
+
+<!-- need to get crossover book and check each of the three effects -->
 
 [Carryover effect and counterbalancing](http://psych.csufresno.edu/price/psych144/counterbalancing.html) - this document has an excellent coverage of the issue of counterbalancing in N-of-1 trials, or to "test different subjects under the different conditions in different orders." Counterbalancing is essential in education since most educational interventions will have a carryover effect. The reason why counterbalancing can help is explained in the article above:
 
@@ -61,7 +60,7 @@ Table 1. Comparing different trial designs
 
 [Run-in period](http://www.medilexicon.com/medicaldictionary.php?t=67147) is a period before the trial starts when subjects are kept without an intervention that could potentially interfere with the efficacy evaluation ([@pablos1998run](http://jama.jamanetwork.com/article.aspx?articleid=187167)). A washout period is identical to the run-in, but applied in between interventions in an N-of-1 trial. In an educational context, this will usually mean that the educational intervention should be stopped between the intervention periods. 
 
-### Period effects
+### Period effects  
 
 When the rate of a certain outcome varies over time independently from the intervention. In an educational context, this would be applicable to extended trials involving children, where their cognitive ability will improve over time independently from the educational intervention. The same would be applicable to, for example, an instructional program on how to use a medical record where students are actually exposed to the medical record for their daily activities. The latter means that their ability to use the medical record would increase independently from the educational intervention. Sometimes that exposure can occur at different rates since different groups might make more or less use of certain medical record features, therefore adding to the complexity of period effects.
 
@@ -70,9 +69,7 @@ When the rate of a certain outcome varies over time independently from the inter
 
 ## Data visualization and modeling
 
-### [crossdes: Construction of Crossover Designs](http://cran.r-project.org/web/packages/crossdes/)
-
-The main functions in crossdes are:
+When it comes to visualization and modeling, N-of-1 trials also borrow from crossover trials. Specifically, packages such as [crossdes](http://cran.r-project.org/web/packages/crossdes/) for the [R language]() are helpful. <!-- insert r citation --> Crossdes main functions include:
 
 * get.plan: Menu-driven selection of crossover designs
 * allcombs: Construct crossover design with all possible treatment orders
@@ -84,13 +81,15 @@ The main functions in crossdes are:
 * isCbalanced: Check whether a crossover design is balanced for ﬁrst order carryover effects
 * isGYD: Check whether a crossover design is balanced
 
+
+
 Another interesting article is "[Graphical Insight and Data Analysis for the 2,2,2 Crossover Design](file:///Users/rpietro/Desktop/9780387988146-c7.pdf)" (@pikounis2001graphical)
 
 
 
 ## Reporting guidelines for where N-of-1 can be used
 
-The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for our research group:
+The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for oru research group:
 
 
 |Main section|Subsections|
@@ -112,18 +111,30 @@ The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 
 
 ### Use case 
 
+The use case for this N-of-1 educational trial ontology is as follows:
+
+1. A group of educational trials using an N-of-1 design are published through either a systematic review or by originally compiling the articles from an original search.
+2. Its design and results are encoded using the N-of-1 trial ontology 
+3. Based on the encoded data a qualitative table is automatically created comparing the characteristics of each individual N-of-1 trial, so that inclusion and exclusion can be generated.
+4. Based on the previously described inclusion and exclusion criteria The encoded data are imported into a statistical language like [R]() and then functions such as [crossdes](http://cran.r-project.org/web/packages/crossdes/), and a meta-analysis of the quantitative data is automatically generated.
+
 
 
 ### Semantic structure
 
+<!-- 
+
 turtle and relations among classes
 plan for direct RDF import using [meta package](http://cran.r-project.org/web/packages/meta/index.html)
+ -->
 
+## Conclusion
+
+N-of-1 trials hold a lot of promise for educational trials, and so it is our hope that review articles such as this might provide an incentive for its broader use in the data-driven education community. Specifically, it is our hope that by using a semantic approach to N-of-1 trial data the aggregation of individual subject data towards large meta-analyses, educational practice guidelines, ultimately improving our global educational standards in online lifelong personalized learning.
 
 
 ## References
 
-### Books
 
 1. [@jones2003design](http://www.amazon.com/Analysis-Cross-Over-Monographs-Statistics-Probability-ebook/dp/B000Q6GV4M/ref=sr_1_1?ie=UTF8&qid=1393722572&sr=8-1&keywords=Design+and+analysis+of+cross-over+trials) -- see [full text](http://www.library.wisc.edu/selectedtocs/be501.pdf) made available by the library of the University of Wisconsin
 2. [@bland2000statistical](http://www.amazon.com/Statistical-Questions-Evidence-Based-Medicine-Martin/dp/0192629921/ref=sr_1_1?ie=UTF8&qid=1393722623&sr=8-1&keywords=Statistical+questions+in+evidence-based+medicine) 
@@ -133,14 +144,20 @@ plan for direct RDF import using [meta package](http://cran.r-project.org/web/pa
 
 ### Articles in other fields with implications for Education
 
-1. [@kunert1998sensory](http://www.sciencedirect.com/science/article/pii/S0950329398000032) - overview of N-of-1 sensory trials
-1. [@gabler2011n](http://www.ncbi.nlm.nih.gov/pubmed/21478771) is a systematic review of the literature on N-of-1 trials
-1. [@lillie2011n](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3118090/) is a good overview of N-of-1 trial design and the issues that should be considered when applying them
-1. [@cook1995randomized](http://www.ncbi.nlm.nih.gov/pubmed/8961779) is an overview of N-of-1 trials in biomedical research
-2. [@mahon1996randomised](http://www.bmj.com/content/312/7038/1069) demonstrates that N-of-1 trial had a positive result on participants when compared with regular clinical practice
 
 
 <!-- 
+
+[@kunert1998sensory](http://www.sciencedirect.com/science/article/pii/S0950329398000032) - overview of N-of-1 sensory trials
+
+[@gabler2011n](http://www.ncbi.nlm.nih.gov/pubmed/21478771) is a systematic review of the literature on N-of-1 trials
+
+[@lillie2011n](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3118090/) is a good overview of N-of-1 trial design and the issues that should be considered when applying them
+
+[@cook1995randomized](http://www.ncbi.nlm.nih.gov/pubmed/8961779) is an overview of N-of-1 trials in biomedical research
+
+[@mahon1996randomised](http://www.bmj.com/content/312/7038/1069) demonstrates that N-of-1 trial had a positive result on participants when compared with regular clinical practice
+
 @article{kunert1998sensory,
   title={Sensory experiments as crossover studies},
   author={Kunert, Joachim},
