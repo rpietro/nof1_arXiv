@@ -6,7 +6,7 @@ Talitha Yen
 Joao Vissoci  
 Ana Paula Ferreira  
 Bruno Melo  
-Jacinto Franco  
+Jacinto José Franco  
 Jacson Barros   
 Seiji Isotani  
 
