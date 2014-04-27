@@ -14,6 +14,8 @@ Seiji Isotani
 
 
 ## Abstract
+N-of-1 trials constitute a special type of cross-over trial designs where subjects are individually randomized rather than randomized as part of a group (intervention arm). While this design has a number of advantages over parallel designs, it has been substantially under-utilized in education due to both a lack of knowledge about it as well as a misconception about experiments in education necessarily having carryover effects and therefore preventing the use of N-of-1. In this article we address both issues, first providing a review of N-of-1 in the context of education while pointing to it potential, and second by addressing the myth that educational trials necessarily imply the presence of carryover effects.
+
 
 
 ## Introduction
@@ -21,12 +23,14 @@ Seiji Isotani
 
 N-of-1 trials are cross-over trials where the randomization is conducted at the subject rather than the group level. This modification has a number of important implications, among them:
 
-1. Data from individual subjects can be analyzed on their own
+1. Data from individual subjects can be analyzed on their own - subjects are their own control, often times improving statistical power and reducing the final study sample size <!-- ref -->
 2. When putting together data from multiple N-of-1 trials, the synthesis is made following meta-analysis principles
 3. Similar to cross-over trials, the design will have to carefully consider issues such as carry-over effect, period effects, intra-subject correlation
 4. Since N-of-1 trials are randomized controlled trials, most of the principles applicable to parallel trials also apply to N-of-1, and so the [CONSORT statement](http://www.consort-statement.org/) has to be observed, obviously with modifications.
 
-Although this design has a number of potential application within research focused on Personalized Lifelong Learning, educational trials making of an N-of-1 design are few and scattered. The objective of this review is therefore to cover the basic principles behind N-of-1 trial design applied to online educational trials, covering practical implementation suggestions and also outlining a first iteration of a structure for their semantic representation.
+Although this design has a number of potential application within research focused on Personalized Lifelong Learning, educational trials making of an N-of-1 design are few and scattered. This undertilization is likely related to the lack of knowledge about this design as well as the belief that educational trials necessarily have strong carryover effects that would prevent their use in education. In other words, when randomizing a student to learning through educational method A and later assigning that same student to educational method B, method A will necessarily influence or carryover to method B.
+
+In response to these two issues, the objective of this review is, first to cover the basic principles behind N-of-1 trial design applied to online educational trials, addressing practical implementation suggestions and also outlining a first iteration for the desing of a structure for their semantic representation. Second, we will attempt to dismiss the belief that carryover effects are spread across all educational trials and instead pin-point situations where they are more or less likely to occur.
 
 
 <!-- https://docs.google.com/file/d/0B4Ke-17mTW1_MW1vRnFYcEdBbzMtM09IaUdCeEZvVmkwVTNJ/edit -->
@@ -87,7 +91,7 @@ Another interesting article is "[Graphical Insight and Data Analysis for the 2,2
 
 
 
-## Reporting guidelines for where N-of-1 can be used
+## Reporting guidelines as the basis for a semantic representation
 
 The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for oru research group:
 
@@ -107,16 +111,15 @@ The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 
 |N-of-1 data compilation| [Use-case driven](http://www.researchgate.net/publication/221465095_A_Proposal_for_a_Unified_Process_for_Ontology_Building_UPON/file/79e4150a24778016df.pdf) [ontology](http://www.w3.org/RDF/) modeling which extends [Cook and Pietrobon, 2007](http://www.ncbi.nlm.nih.gov/pubmed/17847604), connection with R packages|
 
 
-## A proposed semantic representation
-
 ### Use case 
 
-The use case for this N-of-1 educational trial ontology is as follows:
+While at this point reporting guidelines are being used to ensure consistency across interpretation and systematic reviews/meta-analyses, they also constitute a seed toward the future creation of semantic data repositories for N-of-1 trials. In such a situation, a use case for this N-of-1 educational trial ontology could be described as follows:
 
 1. A group of educational trials using an N-of-1 design are published through either a systematic review or by originally compiling the articles from an original search.
 2. Its design and results are encoded using the N-of-1 trial ontology 
 3. Based on the encoded data a qualitative table is automatically created comparing the characteristics of each individual N-of-1 trial, so that inclusion and exclusion can be generated.
 4. Based on the previously described inclusion and exclusion criteria The encoded data are imported into a statistical language like [R]() and then functions such as [crossdes](http://cran.r-project.org/web/packages/crossdes/), and a meta-analysis of the quantitative data is automatically generated.
+5. The output from the previous step would then be presented on a Web site through a business intelligence platform. 
 
 
 
@@ -127,6 +130,23 @@ The use case for this N-of-1 educational trial ontology is as follows:
 turtle and relations among classes
 plan for direct RDF import using [meta package](http://cran.r-project.org/web/packages/meta/index.html)
  -->
+
+
+## Misconceptions about the use of N-of-1 trials in education
+
+As previously described, the carry-over effect is arguably the most important consideration when trying to decide on a trial design in education. Given that information acquisition usually has a fairly strong carry-over effect -- it is hard to forget what you have learned with one intervention before you can move on to the next -- N-of-1 trials in education have usually been forgotten. Except that information acquisition is but one of a series of outcomes that can be of value in educational trial. The following table outlines other outcome variables available within educational trials and how their potential for carry-over effects.
+
+
+|Outcome variable|Potential for carry-over effect|
+|-----|---------|
+|Information acquisition||
+|Satisfaction||
+|Video completion||
+|Number accesses of a course elements (video, page, etc)||
+|Change in practice||
+|Use of a decision-support device||
+|||
+|||
 
 ## Conclusion
 
