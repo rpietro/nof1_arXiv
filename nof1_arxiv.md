@@ -4,7 +4,7 @@ Ricardo Pietrobon
 Mauro Maldonato  
 Talitha Yen  
 Joao Vissoci  
-Ana Paula Ferreira  
+Ana Paula Bonilauri Ferreira  
 Bruno Melo  
 Jacinto José Franco  
 Jacson Barros   
