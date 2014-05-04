@@ -1,55 +1,40 @@
-# N-of-1 Design in Education - a review and proposal for a semantic approach to N-of-1 trials
+# N-of-1 Triaxial Design in Education Technology Experiments - reviewing concepts, disbanding myths and proposing an enhancement in the conceptualization of the N-of-1 design
 
-Ricardo Pietrobon  
-Mauro Maldonato  
-Talitha Yen  
-Joao Vissoci  
-Ana Paula Ferreira  
-Bruno Melo  
-Jacinto José Franco  
-Jacson Barros   
-Seiji Isotani  
+The International Consortium for Research and Technology in Personalized Lifelong Learning - for a full list of participants please see note at the end of this manuscript
+
 
 <!-- to be sent for www.arXiv.org -->
 
 
 ## Abstract
-N-of-1 trials constitute a special type of cross-over trial designs where subjects are individually randomized rather than randomized as part of a group (intervention arm). While this design has a number of advantages over parallel designs, it has been substantially under-utilized in education due to both a lack of knowledge about it as well as a misconception about experiments in education necessarily having carryover effects and therefore preventing the use of N-of-1. In this article we address both issues, first providing a review of N-of-1 in the context of education while pointing to it potential, and second by addressing the myth that educational trials necessarily imply the presence of carryover effects.
+N-of-1 trials constitute a special type of cross-over trial designs where subjects are individually randomized rather than randomized as part of a group (intervention arm). While this design has a number of advantages over parallel designs, it has been substantially under-utilized in education due to (1) a lack of knowledge about it as well as (2) a misconception about experiments in education necessarily having carryover effects that will prevent the use of N-of-1. In this article we address both issues, first providing a review of the N-of-1 design in the context of education while pointing to its potential, and second by addressing the myth that educational trials necessarily imply the presence of carryover effects. We then propose a, to our knowledge, a novel manner of conceptualizing N-of-1 trial design in education.
 
 
 
 ## Introduction
 
+<!-- beat education for too much reliance on theory and little reliance on actual experiments -->
 
-N-of-1 trials are cross-over trials where the randomization is conducted at the subject rather than the group level. This modification has a number of important implications, among them:
+N-of-1 trials are cross-over trials where the randomization is conducted at the subject rather than the group level. This modification has a number of important implications. First, data from individual subjects can be analyzed on their own - subjects are their own control, often times improving statistical power and reducing the final study sample size <!-- ref -->. Second, when putting together data from multiple N-of-1 trials, the synthesis is made following meta-analysis principles. Third, similar to cross-over trials, the design will have to carefully consider issues such as carry-over effect, period effects, intra-subject correlation. And last, since N-of-1 trials are randomized controlled trials, most of the principles applicable to parallel trials also apply to N-of-1, and so the [CONSORT statement](http://www.consort-statement.org/) has to be observed, obviously with modifications.
 
-1. Data from individual subjects can be analyzed on their own - subjects are their own control, often times improving statistical power and reducing the final study sample size <!-- ref -->
-2. When putting together data from multiple N-of-1 trials, the synthesis is made following meta-analysis principles
-3. Similar to cross-over trials, the design will have to carefully consider issues such as carry-over effect, period effects, intra-subject correlation
-4. Since N-of-1 trials are randomized controlled trials, most of the principles applicable to parallel trials also apply to N-of-1, and so the [CONSORT statement](http://www.consort-statement.org/) has to be observed, obviously with modifications.
+Although this design has a number of potential applications within educational trials, particularlly among Personalized Lifelong Learning experiments, educational trials making of an N-of-1 design are few and scattered. This undertilization is likely related to the lack of knowledge about this design as well as the belief that educational trials necessarily have strong carryover effects that would prevent their use in education. In other words, when randomizing a student to learning through educational method A and later assigning that same student to educational method B, method A will necessarily influence or carryover to method B.
 
-Although this design has a number of potential application within research focused on Personalized Lifelong Learning, educational trials making of an N-of-1 design are few and scattered. This undertilization is likely related to the lack of knowledge about this design as well as the belief that educational trials necessarily have strong carryover effects that would prevent their use in education. In other words, when randomizing a student to learning through educational method A and later assigning that same student to educational method B, method A will necessarily influence or carryover to method B.
-
-In response to these two issues, the objective of this review is, first to cover the basic principles behind N-of-1 trial design applied to online educational trials, addressing practical implementation suggestions and also outlining a first iteration for the desing of a structure for their semantic representation. Second, we will attempt to dismiss the belief that carryover effects are spread across all educational trials and instead pin-point situations where they are more or less likely to occur.
+In response to these two issues, the objective of this review is, first to cover the basic principles behind N-of-1 trial design applied to online educational trials, addressing practical implementation suggestions and also outlining a first iteration for the desing of a structure for their semantic representation. Second, we will attempt to dismiss the belief that carryover effects are spread across all educational trials and instead pin-point situations where they are more or less likely to occur. Last, we will propose a, to our knowledge, novel concept in educational trial design that combines the benefits of parallel, cross-over and mixed methods (qualitative and quantitative) research.
 
 
 <!-- https://docs.google.com/file/d/0B4Ke-17mTW1_MW1vRnFYcEdBbzMtM09IaUdCeEZvVmkwVTNJ/edit -->
 
 
-## Design and randomization issues
 
-<!-- need to add specifics about education -->
+<!-- need to add specifics about education --> <!-- check http://www.biostat.umn.edu/~will/6470stuff/Fall-2008/Lect18/lecture18H.pdf?utm_content=bufferb523e&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer check http://goo.gl/wjAh0t -->
 
-<!-- check http://www.biostat.umn.edu/~will/6470stuff/Fall-2008/Lect18/lecture18H.pdf?utm_content=bufferb523e&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer 
 
-check http://goo.gl/wjAh0t 
--->
 
-N-of-1 trials are part of a wide range of trial design types that can be applied in an online environment. Currently, one of the most comprehensive sources of information on different types of trial designs and their combination is defined through [Facebook]()'s [Planout framework]().
+## Definition
 
-<!-- outline basic structure for planout from their web site - check 3d proposal for links -->
+N-of-1 trials are part of a wide range of trial designs that can be applied in an online environment. Its design can be summarized in the following Figure <!-- idraw showing comparison against itself as well as across arms, as well as the potential for mixed methods - but don't show this explicitly - component time, participant, participant-level randomization, outcomes -->
 
-N-of-1 trials have inherited some issues that are typical from crossover trials, namely carryover effects, the need for run-in and washout periods, and period effects. These are described in the following sections.
+According to most texts describing this design <!-- ref --> its major advantage is the ability to compare the outcomes of any given participants against themselves. This feature often times results in a substantial increase in statistical power when compared to the most traditional parallel designs, which is a feature the N-of-1 design has inherited from the cross-over design. <!-- ref --> Unfortunately, <!-- Currently, one of the most comprehensive technologies allowing for the design of different types of trial is [Facebook]()'s [Planout framework](). --> <!-- outline basic structure for planout from their web site - check 3d proposal for links --> N-of-1 trials have also inherited some issues that are typical from crossover trials, namely carryover effects, the need for run-in and washout periods, and period effects. These are described in the following sections.
 
 ### Carryover effect
 
@@ -64,7 +49,7 @@ N-of-1 trials have inherited some issues that are typical from crossover trials,
 
 [Run-in period](http://www.medilexicon.com/medicaldictionary.php?t=67147) is a period before the trial starts when subjects are kept without an intervention that could potentially interfere with the efficacy evaluation ([@pablos1998run](http://jama.jamanetwork.com/article.aspx?articleid=187167)). A washout period is identical to the run-in, but applied in between interventions in an N-of-1 trial. In an educational context, this will usually mean that the educational intervention should be stopped between the intervention periods. 
 
-### Period effects  
+### Period effects
 
 When the rate of a certain outcome varies over time independently from the intervention. In an educational context, this would be applicable to extended trials involving children, where their cognitive ability will improve over time independently from the educational intervention. The same would be applicable to, for example, an instructional program on how to use a medical record where students are actually exposed to the medical record for their daily activities. The latter means that their ability to use the medical record would increase independently from the educational intervention. Sometimes that exposure can occur at different rates since different groups might make more or less use of certain medical record features, therefore adding to the complexity of period effects.
 
@@ -73,17 +58,18 @@ When the rate of a certain outcome varies over time independently from the inter
 
 ## Data visualization and modeling
 
-When it comes to visualization and modeling, N-of-1 trials also borrow from crossover trials. Specifically, packages such as [crossdes](http://cran.r-project.org/web/packages/crossdes/) for the [R language]() are helpful. <!-- insert r citation --> Crossdes main functions include:
+When it comes to visualization and modeling, N-of-1 trials also inherit from crossover trials. Specifically, packages such as [crossdes](http://cran.r-project.org/web/packages/crossdes/) for the [R language]() are helpful. <!-- insert r citation --> Crossdes main functions include
 
-* get.plan: Menu-driven selection of crossover designs
-* allcombs: Construct crossover design with all possible treatment orders
-* williams: Construct a Williams design
-* williams.BIB: Construct a crossover design based on a combination of balanced incomplete block
-* designs and Williams designs.
-* des.MOLS: Construct crossover design based on mutually orthogonal Latin Squares
-* balmin.RMD: Construct balanced minimal repeated measurements crossover design
-* isCbalanced: Check whether a crossover design is balanced for ﬁrst order carryover effects
-* isGYD: Check whether a crossover design is balanced
+|Function|Description|
+|----|----|
+| get.plan | Menu-driven selection of crossover designs |
+| allcombs | Construct crossover design with all possible treatment orders |
+| williams | Construct a Williams design |
+| williams.BIB | Construct a crossover design based on a combination of balanced incomplete block designs and Williams designs.
+| des.MOLS | Construct crossover design based on mutually orthogonal Latin Squares |
+| balmin.RMD | Construct balanced minimal repeated measurements crossover design |
+| isCbalanced | Check whether a crossover design is balanced for ﬁrst order carryover effects |
+| isGYD | Check whether a crossover design is balanced |
 
 
 
@@ -91,9 +77,9 @@ Another interesting article is "[Graphical Insight and Data Analysis for the 2,2
 
 
 
-## Reporting guidelines as the basis for a semantic representation
+## Reporting guidelines
 
-The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for oru research group:
+The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 [(CENT)](http://www.biomedcentral.com/1472-6882/12/S1/P410/). Since CENT has not yet been published, below is an incomplete list with some of the internal standards for our research group:
 
 
 |Main section|Subsections|
@@ -111,7 +97,7 @@ The primary reporting guidelines for N-of-1 is the CONSORT extension for n-of-1 
 |N-of-1 data compilation| [Use-case driven](http://www.researchgate.net/publication/221465095_A_Proposal_for_a_Unified_Process_for_Ontology_Building_UPON/file/79e4150a24778016df.pdf) [ontology](http://www.w3.org/RDF/) modeling which extends [Cook and Pietrobon, 2007](http://www.ncbi.nlm.nih.gov/pubmed/17847604), connection with R packages|
 
 
-### Use case 
+<!-- Use case
 
 While at this point reporting guidelines are being used to ensure consistency across interpretation and systematic reviews/meta-analyses, they also constitute a seed toward the future creation of semantic data repositories for N-of-1 trials. In such a situation, a use case for this N-of-1 educational trial ontology could be described as follows:
 
@@ -120,12 +106,11 @@ While at this point reporting guidelines are being used to ensure consistency ac
 3. Based on the encoded data a qualitative table is automatically created comparing the characteristics of each individual N-of-1 trial, so that inclusion and exclusion can be generated.
 4. Based on the previously described inclusion and exclusion criteria The encoded data are imported into a statistical language like [R]() and then functions such as [crossdes](http://cran.r-project.org/web/packages/crossdes/), and a meta-analysis of the quantitative data is automatically generated.
 5. The output from the previous step would then be presented on a Web site through a business intelligence platform. 
+ -->
 
-
-
-### Semantic structure
 
 <!-- 
+Semantic structure
 
 turtle and relations among classes
 plan for direct RDF import using [meta package](http://cran.r-project.org/web/packages/meta/index.html)
@@ -134,8 +119,9 @@ plan for direct RDF import using [meta package](http://cran.r-project.org/web/pa
 
 ## Misconceptions about the use of N-of-1 trials in education
 
-As previously described, the carry-over effect is arguably the most important consideration when trying to decide on a trial design in education. Given that information acquisition usually has a fairly strong carry-over effect -- it is hard to forget what you have learned with one intervention before you can move on to the next -- N-of-1 trials in education have usually been forgotten. Except that information acquisition is but one of a series of outcomes that can be of value in educational trial. The following table outlines other outcome variables available within educational trials and how their potential for carry-over effects.
+As previously described, the carry-over effect is arguably the most important consideration when trying to decide whether an N-of-1 design would be applicable in an educational trial. Given that information acquisition usually has a fairly strong carry-over effect -- it is hard to forget what you have learned with one intervention before you can move on to the next -- N-of-1 trials in education have usually been forgotten. Except that information acquisition is but one of a series of outcomes that can be of value in educational trial. The following table outlines other outcome variables available within educational trials and how their potential for carry-over effects.
 
+Table X - Outcome variables in N-of-1 trials and their potential for carry-over effect
 
 |Outcome variable|Potential for carry-over effect|
 |-----|---------|
@@ -148,9 +134,26 @@ As previously described, the carry-over effect is arguably the most important co
 |||
 |||
 
+## N-of-1 Triaxial Design in Educational Technology Experiments
+
+Although it is useful to disband the misconception that the N-of-1 design does not have a place in the toolkit of educational experimental researchers, the fact that knowledge acquisition does not fit within this design still is a major drawback. In this section we therefore propose the concept of the N-of-1 triaxial design as a compromise across different types of design to avoid the issues inherent to classical N-of-1 and still ripping its benefits while evaluating knowledge acquisition as an outcome variable.
+
+### The three axes
+
+Parallel design - used for knowledge acquisition, also adding other constructs of interest as outlined on Table X. First phase of a triaxial trial
+N-of-1 quantitative - only evaluated for outcome variables with a low potential for carryover
+N-of-1 quanlitative - evaluated for all outcome variables, including knowledge. will provide insight in relation to participants' perception of change regarding each of the outcomes, as well as to how they might compare to each other. This components turns the study into a mixed methods
+
+<!-- need graphic -->
+
+
+
+
 ## Conclusion
 
-N-of-1 trials hold a lot of promise for educational trials, and so it is our hope that review articles such as this might provide an incentive for its broader use in the data-driven education community. Specifically, it is our hope that by using a semantic approach to N-of-1 trial data the aggregation of individual subject data towards large meta-analyses, educational practice guidelines, ultimately improving our global educational standards in online lifelong personalized learning.
+N-of-1 triaxial experiments hold a significant promise in helping to build an evidence-based platform for educational in general, specially for Lifelong Personalized Learning. By combining characteristics of parallel, N-of-1 quantitative and N-of-1 qualitative designs, it allows educators to not only collect quantitative evidence but also obtain qualitative insights and depth. Of practical importance, given the modular nature of N-of-1 trials, they can be iniated with single participants while immediately ripping the benefits of information coming out of the study. 
+
+It is our hope then that this report might assist in providing an incentive for the broader use of the N-of-1 triaxial design in future studies. Specifically, it is our hope that by using the N-of-1 triaxial trial design, the aggregation of individual subject data toward large meta-analyses and, subsequently, educational practice guidelines might assist in the improvement our global educational standards in Lifelong Personalized Learning.
 
 
 ## References
@@ -166,7 +169,7 @@ N-of-1 trials hold a lot of promise for educational trials, and so it is our hop
 
 
 
-<!-- 
+<!--
 
 [@kunert1998sensory](http://www.sciencedirect.com/science/article/pii/S0950329398000032) - overview of N-of-1 sensory trials
 
@@ -302,3 +305,5 @@ check references in crosdess documentation
 check references in each of the articles and books
 add triples for CENT - connect to separate files using ttl and sparql for unit tests
  -->
+
+Contortium members: Ricardo Pietrobon (US), Mauro Maldonato (Italy), Talitha Yen (Brazil), Joao Ricardo Vissoci (Brazil), Ana Paula Ferreira (Brazil), Silvia Dell'Orco (Italy), Rossella Gagliardi (Italy), Marcelo Bordalo (Brazil), Katia Regina Silva (Brazil), Taís Moreira (Brazil), Bruno Melo (Brazil), Guilherme Cunha (Brazil), Guilherme Isaac (Brazil), Shreyasee (Singapore), Meenakshi (India), Amruta (India), Rafaelle Sperandeo (Italy), Paolo Valerio (Italy), Jacinto José Franco (Brazil), Jacson Barros (Brazil), Seiji Isotani (Brazil)
