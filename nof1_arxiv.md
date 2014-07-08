@@ -188,6 +188,7 @@ add triples for CENT - connect to separate files using ttl and sparql for unit t
 
 
 
+
 <!-- add http://cran.r-project.org/web/packages/SCMA/index.html , take all sections of "Design and Implementation of N-of-1 Trials A Users Guide.pdf" into consideration, take tables I and II from "The AB BA Cross-over How to perform the two- stage analysis if you can't be persuaded that you shouldnt", for proper analysis see "On the Proper Use of the  Crossover Design in Clinical Trials.pdf" ; change name to nof1 and the arm contamination problem. read articles on cross-over and fill out three sections on carryover, run-in washout and period effects, http://cran.r-project.org/web/packages/SCMA/index.html , analyze each outcome in relation to arm contamination (knowledge is a nono since it will increase, information acquisition rate, UX in all of its components including satisfaction, decision making related to specific extending technologies such as devices, practice), use "Design, analysis, and presentation of crossover trials" to enhance table about reporting guidelines, take all sections of "Design and Implementation of N-of-1 Trials A Users Guide.pdf" into consideration, take tables I and II from "The AB BA Cross-over How to perform the two- stage analysis if you cant be persuaded that you shouldnt", for proper analysis see "On the Proper Use of the  Crossover Design in Clinical Trials.pdf" -->
 
 <!-- Use case
@@ -211,3 +212,4 @@ plan for direct RDF import using [meta package](http://cran.r-project.org/web/pa
  -->
 
 <!-- Currently, one of the most comprehensive technologies allowing for the design of different types of trial is [Facebook]()'s [Planout framework](). --> <!-- outline basic structure for planout from their web site - check 3d proposal for links -->
+
